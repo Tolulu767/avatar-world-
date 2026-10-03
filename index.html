@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Avatar World</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+    <h1>🏠 My Avatar World</h1>
+
+    <div class="game">
+
+        <!-- Room buttons -->
+        <div class="rooms">
+            <button onclick="changeRoom('living')">🛋️ Living Room</button>
+            <button onclick="changeRoom('bedroom')">🛏️ Bedroom</button>
+            <button onclick="changeRoom('kitchen')">🍳 Kitchen</button>
+        </div>
+
+        <!-- Game area -->
+        <div id="room" class="room">
+
+            <!-- Character -->
+            <div id="character" class="character">
+                🧍
+            </div>
+
+            <!-- Objects -->
+            <button class="object couch" onclick="clickObject('Couch')">
+                🛋️
+            </button>
+
+            <button class="object lamp" onclick="clickObject('Lamp')">
+                💡
+            </button>
+
+            <button class="object plant" onclick="clickObject('Plant')">
+                🪴
+            </button>
+
+        </div>
+
+        <p id="message">Click something!</p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
