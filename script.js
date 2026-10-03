@@ -32,7 +32,7 @@ function changeRoom(roomName) {
 // Drag the character
 let dragging = false;
 
-character.addEventListener("pointerdown", function() {
+character.addEventListener("pointerdown", function(event) {
     dragging = true;
     character.setPointerCapture(event.pointerId);
 });
